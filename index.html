@@ -12,48 +12,72 @@
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="bg-blue-100 ">
+<body class="bg-blue-100">
   <main class="w-full h-full m-2 p-2 flex items-center justify-center mt-40">
-
     <div class="flex flex-col gap-10">
-
-      <div class="box flex justify-center items-center ">
+      <div class="box flex justify-center items-center">
         <form name="search">
           <input type="text" class="input" name="buscador" id="buscador" aria-label="buscar articulos"
             onmouseout="this.value = ''; this.blur();">
         </form>
         <i class="fas fa-search"></i>
-
       </div>
       <div class="flex flex-col items-center justify-center">
-        <ul id="listaArticulos" class="flex flex-col gap-2" role="list">
-          <li class="articulo  p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-brands fa-phoenix-framework"></i> Celular</li>
-          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-solid fa-laptop-code"></i> Laptop
+        <ul id="listaArticulos" class="grid grid-cols-2 gap-2 animatedCard" role="list">
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-brands fa-phoenix-framework"></i> Celular
           </li>
-          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-solid fa-headphones"></i> Headphones
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-laptop-code"></i> Laptop
           </li>
-          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-solid fa-motorcycle"></i> Moto</li>
-          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-solid fa-car-on"></i> Carro</li>
-          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-solid fa-tv"></i> Tv</li>
-          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem"><i
-              class="fa-solid fa-terminal"></i> Terminal
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-headphones"></i> Headphones
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-motorcycle"></i> Moto
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-car-on"></i> Carro
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-tv"></i> Tv
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-terminal"></i> Terminal
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-lemon"></i> Lemon
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-bicycle"></i> Bicicleta
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-plane"></i> Avión
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-rocket"></i> Cohete
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-ship"></i> Barco
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-train"></i> Tren
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-bus"></i> Bus
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-tractor"></i> Tractor
+          </li>
+          <li class="articulo p-2 bg-indigo-600 text-white rounded-lg opacity-80" role="listitem">
+            <i class="fa-solid fa-truck"></i> Camión
           </li>
         </ul>
-        <p id="noResults" class="hidden noresultados ">No se encontraron resultados</p>
+        <p id="noResults" class="hidden noresultados col-span-2 text-center">No se encontraron resultados</p>
       </div>
     </div>
-
-    <section class="flex">
-
-    </section>
+    <section class="flex"></section>
   </main>
-
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="./js/main.js"></script>
 </body>
