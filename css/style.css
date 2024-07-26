@@ -1,3 +1,60 @@
+:root {
+  --primaryColor: #5b39c0;
+  --secundaryColor: #09356c;
+  --alert: #d10f05;
+}
+
 .filtro {
   display: none;
+}
+
+.box {
+  position: relative;
+}
+
+.input {
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  background: none;
+  border: 4px solid var(--primaryColor);
+  border-radius: 50px;
+  box-sizing: border-box;
+  font-family: Comic Sans MS;
+  font-size: 26px;
+  color: var(--primaryColor);
+  outline: none;
+  transition: 0.5s;
+}
+.box:hover input {
+  width: 350px;
+  border: 4px solid var(--secundaryColor);
+  color: var(--secundaryColor);
+  background: transparent;
+  border-radius: 10px;
+}
+.box i {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(-70%, -50%);
+  font-size: 26px;
+  color: var(--primaryColor);
+  transition: 0.2s;
+}
+.box:hover i {
+  opacity: 0;
+  z-index: -1;
+}
+
+.noresultados {
+  color: var(--alert);
+  font-size: 30px;
+  animation: jackInTheBox;
+  animation-duration: 0.5s;
+}
+
+.animatedCard {
+  animation: rollIn;
+  animation-duration: 0.5s;
 }
